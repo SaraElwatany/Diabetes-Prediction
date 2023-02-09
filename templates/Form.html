@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+    <style>
+        html{
+            scrollbar-width: thin;
+            scrollbar-color:  rgb(119, 119, 119) #F2F2F2;
+        }
+
+        html::-webkit-scrollbar{
+            width: 0.5vw;
+            height: 1vh;
+        }
+
+        html::-webkit-scrollbar-thumb{
+            background-color:#777;
+        }
+
+        html::-webkit-scrollbar-track{
+            background-color: #F2F2F2;
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="../static/CSS/Style.css">
+    <title>Info</title>
+
+</head>
+
+<body>
+    <div class="container1">
+        <div class="inner">
+            <div class="left">
+                <div class="title">
+                    <h1>Enter your information</h1>
+                </div>
+                <form action="/result" method="POST">
+                    <div class="container">
+                        <div class="left">
+                            <div class="Age">
+                                <label for="Age">Age</label>
+                                <input type="number" step="any" name="Age"required />
+                            </div>
+                        </div>
+
+
+                        <div class="right">
+                            <div class="Gender">
+
+                                <label for="Gender">Gender</label>
+                                <input list="Gender" name="Gender">
+                                <datalist id="Gender">
+                                    <option value="1">Female</option>
+                                    <option value="2">Male</option>
+                                </datalist>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="left">
+                            <div class="Height">
+                                <label for="Height">Height</label>
+                                <input type="number" step="any" name="Height" required/>
+                            </div>
+                        </div>
+
+
+                        <div class="right">
+                            <div class="Weight">
+                                <label for="Weight">Weight</label>
+                                <input type="number" step="any" name="Weight" placeholder="" required/>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="Cholesterol">
+                        <label for="Cholesterol">Cholesterol</label>
+                        <input type="number"step="any" name="Cholesterol" class="wide1" required/>
+                    </div>
+
+
+                    <div class="Glucose">
+                        <label for="Glucose">Glucose</label>
+                        <input type="number"  step="any" name="Glucose" class="wide2"required/ >
+                    </div>
+
+
+                    <div class="container">
+                        <div class="left">
+                            <div class="HDL_col">
+                                <label for="HDL_col">HDL_col</label>
+                                <input type="number"step="any" name="HDL_col"required />
+                            </div>
+                        </div>
+
+
+                        <div class="right">
+                            <div class="BMI">
+                                <label for="BMI">BMI</label>
+                                <input type="number" step="any"name="BMI" class="bmi"required/ >
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="Chol_HDL_Ratio">
+                        <label for="Chol_HDL_Ratio">Chol_HDL_Ratio</label>
+                        <input type="number" step="any"name="Chol_HDL_Ratio" class="wide3" placeholder=""required/ >
+                    </div>
+
+
+                    <div class="Systolic_bp">
+                        <label for="Systolic_bp">Systolic_bp</label>
+                        <input type="number" step="any"name="Systolic_bp" class="wide4" required/>
+                    </div>
+
+
+                    <div class="Diastolic_bp">
+                        <label for="Diastolic_bp">Diastolic_bp</label>
+                        <input type="number"step="any" name="Diastolic_bp" class="wide5" required/>
+                    </div>
+
+
+                    <div class="container">
+                        <div class="left">
+                            <div class="Waist">
+                                <label for="waist">Waist</label>
+                                <input type="number"step="any" name="waist" placeholder=""required/ >
+                            </div>
+                        </div>
+
+
+                        <div class="right">
+                            <div class="Hip">
+                                <label for="hip">Hip</label>
+                                <input type="number"step="any" name="hip" class="hip"required />
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="Waist_Hip_Ratio">
+                        <label for="Waist_Hip_Ratio">Waist_Hip_Ratio</label>
+                        <input type="number"step="any" name="Waist_Hip_Ratio" class="wide6" required/>
+                    </div>
+
+
+                    <div class="submit">
+                     <input type="submit" name="Submit" class="button" value="Submit" placeholder="" required>
+
+                    </div>
+                </form>
+            </div>      
+            
+        </div>
+    </div>
+</body>

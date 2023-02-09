@@ -1,0 +1,52 @@
+@import url('https://fonts.google.com/specimen/Nunito');
+
+body {
+    margin: 0;
+    font-family: 'Nunito';
+    background: #F2F2F2;
+    font-size: 20px;
+    height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    color: #F2F2F2;
+}
+
+.container1 {
+    margin: 5em;
+    text-align: center;
+    color: #041326;
+}
+
+.container1 img {
+    width: 98%;
+}
+
+h1 {
+    margin-top: 8em;
+    margin-bottom: 1em;
+}
+
+button {
+    width: 190px;
+    height: 60px;
+    font-size: 1rem;
+    outline: none;
+    margin: 1em;
+    background: #F2F2F2;
+    color: #0A2C59;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.inner {
+    display: grid;
+    grid-template-columns: 55% auto;
+}
+
+.right {
+    background: #041326;
+}
